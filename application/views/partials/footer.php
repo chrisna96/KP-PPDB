@@ -9,19 +9,39 @@
 <script type="text/javascript">
 	$(".form-orangtua").hide();
 	$(".form-wali").hide();
+	$(".data-sekolah").hide();
+	$(".btn-submit").hide();
 
 	$(document).ready(function(){
 		$(".btn-orangtua").click(function(){
 			$(".form-orangtua").show();
 			$(".form-wali").hide();
+			$(".data-sekolah").show();
 		});
 	});
 	$(document).ready(function(){
 		$(".btn-wali").click(function(){
 			$(".form-wali").show();
 			$(".form-orangtua").hide();
+			$(".data-sekolah").show();
 		});
 	});
+	$(document).ready(function(){
+		$(".btn-wali").click(function(){
+			$(".btn-reset").show();
+			$(".btn-next").hide();
+			$(".btn-submit").show();
+		});
+	});
+	$(document).ready(function(){
+		$(".btn-orangtua").click(function(){
+			$(".btn-reset").show();
+			$(".btn-next").hide();
+			$(".btn-submit").show();
+		});
+	});
+
+	// $('.alert').hide();
 </script>
 
 </html>

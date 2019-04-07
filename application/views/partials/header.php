@@ -12,7 +12,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-	<link rel="stylesheet" type="text/css" href="<?php base_url();?>assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/css/style.css">
 </head>
 <body>
 	<nav class="navbar fixed-top navbar-expand-md bg-white navbar-light custom-navbar">
@@ -27,10 +27,10 @@
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav ml-auto custom-li">
 					<li class="nav-item active">
-						<a class="nav-link" href="<?php echo base_url();?>application/controllers/Welcome.php">Home <span class="sr-only">(current)</span></a>
+						<a class="nav-link" href="<?php echo base_url();?>index.php/pages/home">Home <span class="sr-only">(current)</span></a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Daftar <span class="sr-only">(current)</span></a>
+						<a class="nav-link" href="#" data-toggle="modal" data-target="#registrasiDaftar">Daftar <span class="sr-only">(current)</span></a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>

@@ -109,9 +109,22 @@ ul.timeline > li:before {
 }
 
 .siswa {
-	padding: 25px 0px;
+	padding: 50px 0px;
 }
 
+label {
+	font-weight: bold;
+}
+
+.custom-container {
+	padding: 50px 0px;
+}
+
+.custom-alert p{
+	font-size: 15px;
+	color: red;
+	font-weight: bold;
+}
 /*#pembayaran-online {
 	background-color: rgb(2, 135, 60) !important;
 }*/

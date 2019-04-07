@@ -1,9 +1,9 @@
 <section>
-	<div class="container">
-		<div class="siswa">
-			<h3>DATA SISWA</h3>
-		</div>
-		<form>
+	<form>
+		<div class="container">
+			<div class="siswa">
+				<h3>DATA SISWA</h3>
+			</div>
 			<div class="form-row">
 				<div class="form-group col-md-3">
 					<label>NISN: </label>
@@ -60,18 +60,17 @@
 					<textarea rows="5" cols="200"></textarea>
 				</div>
 			</div>
-		</form>
 
-		<div class="pilihan text-center d-none">
-			<h4>PIlih Pengisian Data</h4>
-			<p><button type="button" class="btn btn-primary">Orang Tua</button> atau <button type="button" class="btn btn-success">Wali</button></p>
-		</div>
-
-		<div class="form-orangtua">
-			<div class="siswa">
-				<h3>DATA ORANG TUA</h3>
+			<div class="pilihan text-center d-none">
+				<h4>PIlih Pengisian Data</h4>
+				<p><button type="button" class="btn btn-primary">Orang Tua</button> atau <button type="button" class="btn btn-success">Wali</button></p>
 			</div>
-			<form>
+
+			<div class="form-orangtua">
+				<hr>
+				<div class="siswa">
+					<h3>DATA ORANG TUA</h3>
+				</div>
 				<div class="form-group">
 					<label>Nama Ayah: </label>
 					<input type="text" class="form-control" required>
@@ -166,14 +165,13 @@
 						<input type="number" class="form-control" required>
 					</div>
 				</div>
-			</form>	
-		</div>
-
-		<div class="form-wali">
-			<div class="siswa">
-				<h3>DATA WALI</h3>
 			</div>
-			<form>
+
+			<div class="form-wali">
+				<hr>
+				<div class="siswa">
+					<h3>DATA WALI</h3>
+				</div>
 				<div class="form-group">
 					<label>Nama Wali: </label>
 					<input type="text" class="form-control" required>
@@ -221,14 +219,81 @@
 						<input type="number" class="form-control" required>
 					</div>
 				</div>
-			</form>
+			</div>
+
+			<div class="data-sekolah">
+				<hr>
+				<div class="siswa">
+					<h3>DATA SEKOLAH</h3>
+				</div>
+				<div class="form-row">
+					<div class="form-group col-md-4">
+						<label>NPSN Sekolah: </label>
+						<input type="number" class="form-control" required>
+					</div>
+					<div class="form-group col-md-4">
+						<label>Status Sekolah: </label>
+						<select id="status-sekolah" class="form-control" required>
+							<option>Negeri</option>
+							<option>Swasta</option>
+						</select>
+					</div>
+					<div class="form-group col-md-4">
+						<label>Tahun Lulus: </label>
+						<select id="tahun-lulus" class="form-control" required>
+							<option>2015</option>
+							<option>2016</option>
+							<option>2017</option>
+							<option>2018</option>
+							<option>2019</option>
+						</select>
+					</div>
+				</div>
+				<div class="form-group">
+					<label>Nama Sekolah: </label>
+					<input type="text" class="form-control" required>
+				</div>
+				<div class="form-group">
+					<label>Alamat Sekolah: </label>
+					<div class="row col-md-12 px-0 mx-0">
+						<textarea rows="5" cols="200"></textarea>
+					</div>
+				</div>
+
+				<hr>
+				<div class="siswa">
+					<h3>DATA NILAI UJIAN NASIONAL</h3>
+				</div>
+				<div class="form-row">
+					<div class="form-group col-sm-6">
+						<label>IPA: </label>
+						<input type="text" class="form-control" required>
+					</div>
+					<div class="form-group col-sm-6">
+						<label>Matematika: </label>
+						<input type="text" class="form-control" required>
+					</div>	
+				</div>
+				<div class="form-row">
+					<div class="form-group col-sm-6">
+						<label>Bahasa Indonesia: </label>
+						<input type="text" class="form-control" required>
+					</div>
+					<div class="form-group col-sm-6">
+						<label>Bahasa Inggris: </label>
+						<input type="text" class="form-control" required>
+					</div>	
+				</div>
+			</div>
 		</div>
 
-		<div class="next-button text-center next">
+		<div class="text-center">
 			<p>
-				<button type="btn" class="btn btn-danger">Reset</button>
-				<button type="btn" class="btn btn-primary" data-toggle="modal" data-target="#pilihIsiData">Selanjutnya</button>
+				<button type="btn" class="btn btn-danger btn-reset">Reset</button>
+				<button type="btn" class="btn btn-primary btn-next" data-toggle="modal" data-target="#pilihIsiData">Selanjutnya</button>
+				<input type="submit" name="submit" class="btn btn-success btn-submit" value="Submit">
 			</p>
 		</div>
-	</div>
+	</form>
+
 </section>
