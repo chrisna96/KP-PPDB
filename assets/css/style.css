@@ -125,6 +125,11 @@ label {
 	color: red;
 	font-weight: bold;
 }
+
+.lihat-reg {
+	border-style: solid;
+	border-color: black;
+}
 /*#pembayaran-online {
 	background-color: rgb(2, 135, 60) !important;
 }*/

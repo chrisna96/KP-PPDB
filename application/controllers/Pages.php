@@ -24,4 +24,11 @@ class Pages extends CI_Controller {
 		$this->load->view('partials/modal.php');
 		$this->load->view('partials/footer.php');
 	}
+	public function kode()
+	{
+		$this->load->view('partials/header.php');
+		$this->load->view('pages/kode.php');
+		$this->load->view('partials/modal.php');
+		$this->load->view('partials/footer.php');
+	}
 }

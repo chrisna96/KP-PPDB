@@ -1,0 +1,14 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\application",
+    "\\application\\controllers",
+    "\\application\\views",
+    "\\application\\views\\pages",
+    "\\application\\views\\partials",
+    "\\assets",
+    "\\assets\\css"
+  ],
+  "SelectedNode": "\\application\\views\\pages\\kode.php",
+  "PreviewInSolutionExplorer": false
+}
